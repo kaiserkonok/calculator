@@ -18,6 +18,8 @@ acButton.onclick = (e) => {
 }
 
 calculateButton.onclick = (e) => {
-  cq !== '' ? output.value = eval(cq) : output.value = ''
-  cq = `${eval(cq)}`
+  if (eval(cq)) {
+    output.value = eval(cq)
+    cq = `${eval(cq)}`
+  }
 }
