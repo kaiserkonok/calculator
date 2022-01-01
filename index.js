@@ -19,14 +19,14 @@ acButton.onclick = (e) => {
 
 calculateButton.onclick = (e) => {
   try {
-	  if (eval(cq) && cq !== '') {
-	    output.value = eval(cq)
-	    cq = `${eval(cq)}`
-	  } else {
-  		output.value = "Syntax error!"
-	  }
+    if (eval(cq) !== undefined && cq !== '') {
+      output.value = eval(cq)
+      cq = `${eval(cq)}`
+    } else {
+    	output.value = "Syntax error!"
+    }
 
-     } catch (e) {
+    } catch (e) {
      	output.value = "Syntax error!"
      }
 }
