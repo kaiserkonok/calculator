@@ -25,8 +25,7 @@ calculateButton.onclick = (e) => {
     } else {
     	output.value = "Syntax error!"
     }
-
-    } catch (e) {
-     	output.value = "Syntax error!"
-     }
+  } catch (e) {
+    output.value = "Syntax error!"
+  }
 }
